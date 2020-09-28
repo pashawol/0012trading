@@ -1,1 +1,1 @@
-1. Отключил lazy плагин. Поставил  loading="lazy"
+1. <https://pashawol.github.io/0012trading/public>
