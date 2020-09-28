@@ -7,8 +7,8 @@ mixin s-training()
 			+e.slider.slider-js
 				- for (var x = 1; x < 7; x++)
 					+e.slide
-						+e.img-wrap(href=`img/@2x/${x}lg.jpg`  )
-							img.res-i(src="#" data-lazy=`img/@2x/${x}.jpg` loading="lazy", alt="")
+						+e.img-wrap(href=`img/@2x/${x}.png`  )
+							img.res-i(src="#" data-lazy=`img/@1x/${x}.png` loading="lazy", alt="")
 			
 
 			+e.wrap
