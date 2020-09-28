@@ -1,0 +1,35 @@
+mixin s-author()
+	// start s-author
+	+b.SECTION.s-author.section#s-author&attributes(attributes)
+		.container
+			.section-title
+				h2 Автор системы «Быстрый Старт» ЕВГЕНИЙ СТРИЖ
+				
+			.row
+				.col-lg
+					p Непрерывно #[strong занимается трейдингом с&nbsp;2004 года] (работает на&nbsp;рынках FOREX, NYSE, CME, криптовалюты)
+					p Начинал  #[strong с&nbsp;абсолютного нуля], без <br class="d-none d-lg-block"> связей и&nbsp;стартового капитала
+						br
+						+e.link--video(href="https://vimeo.com/333333" data-fancybox="video-gal") Смотреть видео
+					p Евгений регулярно делится видео-записями своей торговли со&nbsp;всеми желающими.
+						br
+						+e.link.small(href="img/@2x/2020-02-20_16-32-57.jpg" data-fancybox="gal-1") Вот так выглядит его
+							br
+							| типичный ЕЖЕДНЕВНЫЙ доход →
+				.col-lg-auto.align-self-end.text-center.order-lg-0.order-last
+					+pic('man2.png' )
+				+e.left.col-lg
+					p Стандартный для Евгения заработок на&nbsp;рынке CME:  #[strong +$30.000 личной прибыли] на&nbsp;одной сделке
+						br
+						+e.link.small(href="img/@2x//rez2.jpg" data-fancybox="gal-2") Доказательства
+					p Средний результат Евгения на&nbsp;рынке FOREX &mdash;  #[strong $8.000 личной прибыли] в&nbsp;месяц
+						br
+						+e.link.small(href="img/@2x/rez3.jpg" data-fancybox="gal-2") Доказательства
+					p С&nbsp;2011 года проводит эксклюзивное обучение в&nbsp;Инфо-ДВД
+						br
+						+e.link.small(href="img/@2x/rez4.jpg" data-fancybox="gal-2") Доказательства
+
+						//- br
+						//- +e.link.small(href="img/@2x/statement.jpg" data-fancybox="gal-3") Доказательства
+					p Сторонник концепции &laquo;эффективного трейдинга&raquo;:  #[strong максимум прибыли при минимальных затратах времени и&nbsp;усилий]
+	// end s-author

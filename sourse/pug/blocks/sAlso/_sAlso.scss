@@ -1,0 +1,45 @@
+
+	// start .sAlso
+	.sAlso {
+		// .section-title
+		--sTPB: #{rem(60)};
+		img{
+			margin-bottom: rem(32);
+			height: rem(64);
+		}
+		p{
+			font-size: rem(20);
+				@include media-breakpoint-up(xl) {
+
+					max-width: rem(380);
+				}
+			line-height: 167.5%;
+		}
+		&__col{
+			padding-bottom: rem(35);
+		}
+		&__text{
+			margin-left: auto;
+			margin-right: auto;
+			max-width: rem(1100);
+			@include rfs(25px);
+			margin-left: auto;
+			margin-right: auto;
+			font-weight: bold;
+			text-align: center;
+			color: $purple;
+			padding-top: rem(10);
+			padding-bottom: rem(5);
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sAlso

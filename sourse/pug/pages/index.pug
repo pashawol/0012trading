@@ -1,0 +1,41 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-why/_s-why.pug
+include ../blocks/s-result/_s-result.pug
+include ../blocks/s-training/_s-training.pug
+include ../blocks/s-author/_s-author.pug
+include ../blocks/s-rews/_s-rews.pug
+include ../blocks/s-steps/_s-steps.pug
+include ../blocks/s-not/_s-not.pug
+include ../blocks/sOnline/_sOnline.pug
+include ../blocks/sAlso/_sAlso.pug
+include ../blocks/sResultImg/_sResultImg.pug
+include ../blocks/sWhy/_sWhy.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Прибыль каждый день'
+	title= title
+block pagecontent 
+	//- +mob-mnu()
+	+header()(class="header--1")
+	//- +header()(class="header--2 header--reverse")
+	//- +header()(class="header--3")
+	//- +header()(class="header--4")
+	//- +header()(class="header--5")
+	+s-why
+	+sOnline
+	+s-steps
+		+s-not
+	+sAlso
+	+s-result
+	+sResultImg
+	+s-training
+	+s-author
+	+sWhy
+	+s-rews
+	+footer() 

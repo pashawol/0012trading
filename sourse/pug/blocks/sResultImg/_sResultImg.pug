@@ -1,0 +1,26 @@
+mixin sResultImg()
+	// start sResultImg
+	+b.SECTION.sResultImg.section#sResultImg&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Каких результатов добиваются новички?
+				
+			.row
+				mixin item(i,n,t,a)
+					+e.col.col-lg-6
+						+e.img-wrap(href=`img/@2x/sResultImg-${i}.png` data-fancybox="sResultImg-gal")
+							+pic(`sResultImg-${i}.png`)
+						.row
+							+e.name.col= n
+							.col-auto
+								+e.link.link-purple(href= a target="_blank")
+									+icon("zoom")
+									| Смотреть отчет
+						+e.total= t
+					// /+e.col.col-lg-6
+				+item(`1`,`Сергей `,`Увеличил счёт в 2,5 РАЗА!`,`https://mastertradepro2.info-dvd.ru/ReportHistory-5307911/`)
+				+item(`2`,`Александр`,`Увеличил счёт в 2 РАЗА!`,`https://mastertradepro2.info-dvd.ru/ReportHistory-5307902/ `)
+				+item(`3`,`Любовь`,`УТРОИЛА торговый счет!`,`https://mastertradepro2.info-dvd.ru/ReportHistory-5307971`)
+				+item(`4`,`Вячеслав`,`Увеличил счет в 1,5 РАЗА!`,`https://mastertradepro2.info-dvd.ru/ReportHistory-5307946 `)
+						
+	// end sResultImg

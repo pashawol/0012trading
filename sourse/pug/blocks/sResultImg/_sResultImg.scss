@@ -1,0 +1,47 @@
+
+	// start .sResultImg
+	.sResultImg {
+		--sPT: #{rem(105)};
+		--sTPB: #{rem(60)};
+		&__col{
+			margin-bottom: rem(60);
+		}
+		&__img-wrap{
+			display: block;
+			margin-bottom: rem(20);
+		}
+		&__name{
+			@extend .h6;
+			font-weight: normal;
+		}
+		&__link{
+			display: inline-flex;
+			align-items: center;
+			font-weight: bold;
+			.icon{
+				font-size: 1rem;
+				margin-right: rem(9);
+			}
+		}
+		&__total{
+			display: inline-block;
+			color: #ffffff;
+			font-weight: bold;
+			background-color: $danger;
+			// @extend .h6;
+			@include rfs(30px);
+			padding: rem(0) rem(10);
+		}
+		
+		
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sResultImg

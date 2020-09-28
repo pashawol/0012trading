@@ -1,0 +1,20 @@
+mixin sAlso()
+	// start sAlso
+	+b.SECTION.sAlso.section#sAlso&attributes(attributes)
+		.container
+			+b.section-title
+				h2 А еще:
+				
+			.row
+				mixin item(i, t)
+					+e.col.col-xl-4.col-md-6 
+						img(src=`img/svg/also-${i}.svg` loading="lazy", alt="")
+						p!= t
+				+item(`1`,`Вы&nbsp;узнаете, <strong>как устроен рынок FOREX</strong> и&nbsp;какие возможности он&nbsp;скрывает`)
+				+item(`2`,`Вы&nbsp;получите <strong>проверенную торговую стратегию</strong>, с&nbsp;помощью которой можно зарабатывать от&nbsp;50&nbsp;долларов каждый день`)
+				+item(`3`,`Вы&nbsp;узнаете, <strong>как открыть счет, установить и&nbsp;настроить</strong> торговый терминал`)
+				+item(`4`,`Вы&nbsp;получите <strong>личный финансовый план трейдера</strong> и&nbsp;освоите правила его составления`)
+				+item(`5`,`Вы&nbsp;узнаете <strong>правила грамотного управления сделкой</strong>, чтобы не&nbsp;терпеть убытки`)
+				+item(`6`,`Вы&nbsp;получите <strong>обзор всех необходимых инструментов</strong> и&nbsp;получите <strong>советы по&nbsp;организации рабочего места</strong>`)
+			+e.text + А&nbsp;также все необходимые дополнительные материалы, программы и&nbsp;персональную помощь в&nbsp;настройке
+	// end sAlso

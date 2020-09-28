@@ -1,0 +1,44 @@
+mixin sOnline()
+	// start sOnline
+	+b.sOnline.section#sOnline&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Депозит умножился в&nbsp;100 раз за&nbsp;год и&nbsp;3&nbsp;месяца!
+				
+			.row
+				.col-xl-4
+					+e.item
+						+e.img-wrap
+							img(src="img/svg/kub-1.svg" loading="lazy", alt="")
+						div
+							+e.small Период:
+
+							+e.lg 1 год и 3 месяца
+							
+					+e.item
+						+e.img-wrap
+							img(src="img/svg/kub-2.svg" loading="lazy", alt="")
+						div
+							+e.small Начальный депозит:
+							+e.lg 1000$ США
+					+e.item
+						+e.img-wrap
+							img(src="img/svg/kub-3.svg" loading="lazy", alt="")
+						div
+							+e.small Результат:
+							+e.lg 107 000$ США
+					+e.item
+						+e.img-wrap
+							img(src="img/svg/kub-4.svg" loading="lazy", alt="")
+						div
+							+e.small Максимальная просадка:
+							+e.lg 20%
+					+e.footer
+						+icon("search")
+						| Вы&nbsp;можете убедиться в&nbsp;реальности отчета&nbsp;самостоятельно.
+					p Как это сделать? Берете любую сделку, смотрите на&nbsp;дату и&nbsp;время и&nbsp;цену покупки/продажи. Находите в&nbsp;истории своего торгового терминала этот момент на&nbsp;графике. Находите цены покупки/продажи, вычисляете разницу. Она будет совпадать с&nbsp;тем, что указано в&nbsp;отчете. Допускается небольшая разница на&nbsp;величину спрэда, который различается у&nbsp;разных брокеров.
+				.col
+					+e.img-block
+						+pic('graf.png')
+						+e.link.text-purple(href="#") [ Кликните, чтобы смотреть полный отчет! ]
+	// end sOnline

@@ -1,0 +1,53 @@
+
+	// start .sWhy
+	.sWhy {
+		--sPT: #{rem(110)};
+		--sPB: #{rem(26)};
+
+		&__small{
+			margin-bottom: rem(55);
+		}
+		p{
+			@extend .h6;
+			font-weight: normal;
+			max-width: rem(855);
+			line-height: 167.5%;
+			margin-bottom: rem(30);
+			span{
+				display: inline-block;
+				font-weight: bold;
+				background-color: $danger;
+				color: #ffffff;
+				padding: rem(3) rem(10);
+			}
+		}
+		&__block{
+			background-color: rgba($color: $danger, $alpha: .1);
+			text-align: center;
+				@extend .h6;
+				font-weight: normal;
+					@include media-breakpoint-up(sm) {
+
+						padding: rem(56) rem(20) rem(30);
+					}
+					padding: rem(30) rem(15);
+					@include media-breakpoint-up(lg) {
+
+						width: rem(450);
+					}
+				img{
+					margin-bottom: rem(33);
+				}
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sWhy

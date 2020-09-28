@@ -1,0 +1,21 @@
+mixin s-training()
+	// start s-training
+	+b.SECTION.s-training.section#s-training&attributes(attributes)
+		.container
+			.section-title
+				h2 Как проходит обучение?
+			+e.slider.slider-js
+				- for (var x = 1; x < 7; x++)
+					+e.slide
+						+e.img-wrap(href=`img/@2x/${x}lg.jpg`  )
+							img.res-i(src="#" data-lazy=`img/@2x/${x}.jpg` loading="lazy", alt="")
+			
+
+			+e.wrap
+				.row
+					.col-md-6
+						.time__block 
+							.idvd_timer.autostart(data-redirect_url='', data-duration_hours='36.5')
+					.col-md-6
+						+e.btn.btn.lb_target(type="button") Получите доступ бесплатно
+	// end s-training

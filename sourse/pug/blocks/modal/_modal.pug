@@ -1,0 +1,60 @@
+
+mixin modal() 
+ 
+	//- #modal-win.modal.fade(tabindex='-1', role='dialog', aria-labelledby='modal-win', aria-hidden='true')
+		
+	//- 	div( class="   modal-dialog  modal-dialog-centered  " role='document') 
+	//- 		+form-wrap()(class=" modal-content modal-win ")
+	//- 			button.close.mfp-close(type='button', data-dismiss='modal', aria-label='Close')  ×
+	//- 			+input("tel","Введите ваш телефон")(name="tel" required) 
+				
+	//- 			+e.BUTTON.btn.btn.btn-accent.btn-block Отправить
+	//- 			+b.wrap-polite
+	//- 				+b.custom-input.polite
+	//- 					+b.LABEL.custom-input.polite
+	//- 						+e.INPUT.input.__input-radio(type="checkbox" checked name="polite" required value="")
+	//- 						+e.SPAN.lab
+	//- 						| Даю 
+	//- 						| 
+	//- 						span.link( data-toggle='modal', data-target='#exampleModal2') согласие 
+
+	//- 						| на хранение и обработку   персональных данных
+	
+ 
+
+	//- #thanks.modal.fade(tabindex='-1', role='dialog', aria-labelledby='thanks', aria-hidden='true')
+	//- 	div( class=" ttext-center  modal-dialog  modal-dialog-centered  " role='document') 
+	//- 		+form-wrap()(class=" modal-content modal-win ")
+	//- 			button.close.mfp-close(type='button', data-dismiss='modal', aria-label='Close')  ×
+	//- 			br
+	//- 			.h2 Заявка принята
+	//- 			br
+	//- 			.h3 Скоро с Вами свяжутся
+	//- 			br 
+ 
+	// ФОРМА ПОДПИСКИ
+	.leadbox_window(style='display:none; line-height:normal;', data-selector='lb_target')
+		.ld_content_wrapper
+			.ld_close
+			.ld_progressbar
+			.ld_main_line
+				.ld_icon
+					img(src='img/@2x/man.png', style='height: 482px; margin-bottom: -23px;', alt='')
+				.ld_content(style='    width: 400px;')
+					.ic_sform.ic_sform_2_0990bd2a
+					script(type='text/javascript').
+						(function (d, w, r, t, cl) {
+						var rid = r.toString().substr(2);var e = d.getElementsByClassName(cl)[0];
+						e.className="";e.id = "ic_sform_"+rid;
+						var n = d.getElementsByTagName(t)[0], s = d.createElement(t), f = function () {n.parentNode.insertBefore(s, n);};
+						s.type = "text/javascript";s.async = true;s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//www.infoclub.info/sform_loader/2/0990bd2a/?rid="+rid;
+						if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else {f();}
+						})(document, window, Math.random(), "script", "ic_sform_2_0990bd2a");
+			.ps
+				| Мы гарантируем безопасность введенной Вами информации. 
+				a(href='https://info-dvd.ru/pages/privacy', target='_blank')
+					| Политика
+					| конфиденциальности
+	link(rel='stylesheet', media='all', href='//info-dvd.ru/tools/lead_box/lead_box.css')
+	
+	// end
