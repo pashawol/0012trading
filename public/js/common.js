@@ -175,12 +175,14 @@ function eventHandler() {
 		dots: true,
 		// autoplay: true,
 		// autoplaySpeed: 6000,
-		lazyLoad: 'progressive',
-		slidesToShow: 1,
-		adaptiveHeight: true
+		slidesToShow: 1
 	};
-	$slickElement.slick(_objectSpread({}, defSl));
-	$('.slider-js').slick(_objectSpread({}, defSl)); // $('.fancy-gal:not(.slick-cloned)').fancybox();
+	$slickElement.slick(_objectSpread(_objectSpread({}, defSl), {}, {
+		lazyLoad: 'progressive' // adaptiveHeight: true
+
+	}));
+	$('.slider-js').slick(_objectSpread({}, defSl));
+	$('.slider2-js').slick(_objectSpread({}, defSl)); // $('.fancy-gal:not(.slick-cloned)').fancybox();
 
 	$().fancybox({
 		selector: '.s-training .slick-slide:not(.slick-cloned) a'

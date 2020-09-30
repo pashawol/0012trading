@@ -5,8 +5,8 @@
   .container {
     position: relative;
 
-    &::before {
-      content: url(../img/@2x/logo.png);
+    .before {
+      // content: url(../img/@2x/logo.png);
 
       // @include a-cent;
       @include media-breakpoint-up(md) {

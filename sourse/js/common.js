@@ -191,20 +191,28 @@ function eventHandler() {
 		dots: true,
 		// autoplay: true,
 		// autoplaySpeed: 6000,
-		lazyLoad: 'progressive',
 		slidesToShow: 1,
-		adaptiveHeight: true
+		
 	}
-
+	
 	$slickElement.slick({
-
-		...defSl
+		
+		...defSl,
+		lazyLoad: 'progressive',
+		// adaptiveHeight: true
 
 	});
 
 	$('.slider-js').slick({
 
-		...defSl
+		...defSl, 
+		// adaptiveHeight: true
+
+	});
+
+	$('.slider2-js').slick({
+
+		...defSl,
 
 	});
 

@@ -36,7 +36,10 @@
 		font-weight: bold;
 		margin-top: rem(20);
 		@extend .text-white;
-
+		border-bottom: 1px solid;
+		&:hover{
+			border-color: transparent;
+		}
 		&--video {
 			position: relative;
 			display: inline-flex;

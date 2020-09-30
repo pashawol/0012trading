@@ -39,17 +39,21 @@ mixin modal()
 			.ld_progressbar
 			.ld_main_line
 				.ld_icon
-					img(src='img/@2x/man.png', style='height: 482px; margin-bottom: -23px;', alt='')
-				.ld_content(style='    width: 400px;')
-					.ic_sform.ic_sform_2_0990bd2a
-					script(type='text/javascript').
-						(function (d, w, r, t, cl) {
-						var rid = r.toString().substr(2);var e = d.getElementsByClassName(cl)[0];
-						e.className="";e.id = "ic_sform_"+rid;
-						var n = d.getElementsByTagName(t)[0], s = d.createElement(t), f = function () {n.parentNode.insertBefore(s, n);};
-						s.type = "text/javascript";s.async = true;s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//www.infoclub.info/sform_loader/2/0990bd2a/?rid="+rid;
-						if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else {f();}
-						})(document, window, Math.random(), "script", "ic_sform_2_0990bd2a");
+					img(src='img/@2x/manmob.png', style='height: 482px; margin-bottom: -23px;', alt='')
+				div(style='    width: 400px;')
+					p.small Поздравляем! Вы можете получить доступ бесплатно
+					.ld_content(style='margin-left: 0;    width: 400px;')
+						.ic_sform.ic_sform_2_0990bd2a
+						script(type='text/javascript').
+							(function (d, w, r, t, cl) {
+							var rid = r.toString().substr(2);var e = d.getElementsByClassName(cl)[0];
+							e.className="";e.id = "ic_sform_"+rid;
+							var n = d.getElementsByTagName(t)[0], s = d.createElement(t), f = function () {n.parentNode.insertBefore(s, n);};
+							s.type = "text/javascript";s.async = true;s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//www.infoclub.info/sform_loader/2/0990bd2a/?rid="+rid;
+							if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else {f();}
+							})(document, window, Math.random(), "script", "ic_sform_2_0990bd2a");
+					.time__block
+						.idvd_timer.autostart(data-redirect_url='', data-duration_hours='36.5')
 			.ps
 				| Мы гарантируем безопасность введенной Вами информации. 
 				a(href='https://info-dvd.ru/pages/privacy', target='_blank')
